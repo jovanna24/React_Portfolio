@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import contactImg from "../assets/images/contact-img.svg";
 import 'animate.css';
-// import TrackVisibility from 'react-on-screen';
 
 const Contact = () => {
   const [formDetails, setFormData] = useState({
@@ -13,10 +12,7 @@ const Contact = () => {
     phone: ''
   });
 
-  // const [status, setStatus] = useState({
-  //   message: '',
-  //   success: true
-  // });
+  const [formErrors, setFormErrors] = useState({});
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,7 +24,41 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
+    if (validateForm()) {
+      console.log('Form submitted successfully!', formDetails);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: '',
+        phone: ''
+      });
+    } else {
+      console.log('Form validation failed!', formErrors);
+    }
+  };
+
+  const validateForm = () => {
+    const errors = {};
+    let formIsValid = true;
+
+    if (!formDetails.firstName.trim()) {
+      formIsValid = false;
+      errors.firstName = 'Please enter your first name';
+    }
+
+    if (!formDetails.lastName.trim()) {
+      formIsValid = false;
+      errors.lastName = 'Please enter your last name';
+    } 
+
+    if (!formDetails.email.trim()) {
+      formIsValid = false;
+      errors.email = 'Please enter your email';
+    } 
+
+    setFormErrors(errors);
+    return formIsValid;
   };
 
   return (
@@ -49,18 +79,52 @@ const Contact = () => {
                         value={formDetails.firstName} 
                         placeholder="First Name" 
                         onChange={handleInputChange} 
+                        className={formErrors.firstName && 'is-invalid'}
                         />
+                        {formErrors.firstName && <span className="error">{formErrors.firstName}</span>}
                       </Col>
                       <Col sm={6} className='px-1'>                        
                       <input 
                         type="text" 
-                        name="firstName"
-                        value={formDetails.firstName} 
-                        placeholder="First Name" 
+                        name="lastName"
+                        value={formDetails.lastName} 
+                        placeholder="Last Name" 
+                        onChange={handleInputChange} 
+                        className={formErrors.firstName && 'is-invalid'}
+                        />
+                        {formErrors.lastName && <span className="error">{formErrors.lastName}</span>}
+                        </Col>
+                      <Col sm={6} className='px-1'>                        
+                      <input 
+                        type="text" 
+                        name="email"
+                        value={formDetails.email} 
+                        placeholder="Email Address" 
+                        onChange={handleInputChange} 
+                        className={formErrors.email && 'is-invalid'}
+                        />
+                        {formErrors.email && <span className="error">{formErrors.email}</span>}
+                      </Col>
+                      <Col sm={6} className='px-1'>                        
+                      <input 
+                        type="text" 
+                        name="phone"
+                        value={formDetails.phone} 
+                        placeholder="Phone Number" 
                         onChange={handleInputChange} 
                         />
                       </Col>
+                      <Col sm={12} className='px-1'>                        
+                      <input 
+                        type="text" 
+                        name="message"
+                        value={formDetails.message} 
+                        placeholder="Message" 
+                        onChange={handleInputChange} 
+                       />
+                      </Col>
                     </Row>
+                    <Button type="submit">Submit</Button>
                 </form>
                 </Col>
             </Row>

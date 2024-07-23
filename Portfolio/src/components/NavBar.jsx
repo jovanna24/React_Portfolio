@@ -8,32 +8,37 @@ import navIcon2 from '../assets/images/nav-icon2.svg';
 import navIcon3 from '../assets/images/nav-icon3.svg';
 
 const NavBar = () => {
+  // State variable to keep track of whether the user has scrolled past the navbar
   const [scrolled, setScrolled] = useState(false);
 
+  // UseEffect hook is used to run the code inside the callback function whenever the component mounts or updates
   useEffect(() => {
-/**
-     * Function that handles the scroll event and updates the state based on the scroll position
-     */
-    const onScroll = () => {
-      // Check if the scroll position is greater than 50 pixels
+    // Define a function to handle the scroll event
+    const handleScroll = () => {
+      // Check if the user has scrolled past the navbar (50 pixels from the top of the page)
       if (window.scrollY > 50) {
-        // Update the state to indicate that the user has scrolled
+        // Set the state to true if the user has scrolled past the navbar
         setScrolled(true);
       } else {
-        // Reset the state to indicate that the user is at the top of the page
+        // Set the state to false if the user has not scrolled past the navbar
         setScrolled(false);
       }
-    }
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    };
+    // Add the scroll event listener to the window object
+    window.addEventListener('scroll', handleScroll);
+    // Clean up the event listener when the component unmounts or updates
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
+  
 
 
   return (
-    <Navbar expand="lg" className={`navbar ${scrolled ? 'scrolled' : ''}`} fixed="top">
+    <Navbar expand="lg" className={ scrolled ? 'scrolled' : ''} fixed="top">
       <Container>
       <Navbar.Brand>
-          <NavLink to="/about" activeclassname="active-link">
+          <NavLink to="/" activeclassname="active-link">
             <img src={logo} alt="Logo"/>
           </NavLink>
         </Navbar.Brand >
@@ -41,7 +46,7 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-          <NavLink to="/about" activeclassname="active-link">About Me</NavLink>
+          <NavLink to="/" activeclassname="active-link">About Me</NavLink>
             </li>
             <li className="nav-item">
           <NavLink to="/portfolio" activeclassname="active-link">Portfolio</NavLink>
