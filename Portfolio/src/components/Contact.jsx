@@ -52,11 +52,15 @@ const Contact = () => {
       errors.lastName = 'Please enter your last name';
     } 
 
+    const emailRegex = /\S+@\S+\.\S+/;
     if (!formDetails.email.trim()) {
       formIsValid = false;
       errors.email = 'Please enter your email';
-    } 
-
+    } else if (!emailRegex.test(formDetails.email)) {
+      formIsValid = false;
+      errors.email = 'Please enter a valid email address';
+    }
+    
     setFormErrors(errors);
     return formIsValid;
   };

@@ -65,7 +65,7 @@ const NavBar = () => {
                     <a href="https://github.com/jovanna24"><img src={navIcon2} alt="Facebook"/></a>
                     <a href="https://www.instagram.com/jovanna_g24/"><img src={navIcon3} alt="Instagram"/></a>
                 </div> 
-                <a href="#contact"><button className="vvd" type="button"><span>Let&apos;s Connect!</span></button></a>
+                <NavLink to ="/contact"><button className="vvd" type="button"><span>Let&apos;s Connect!</span></button></NavLink>
             </span>
       </Container>
     </Navbar>

@@ -19,7 +19,11 @@ const Footer = () => {
                             <a href="https://github.com/jovanna24"><img src={navIcon2} alt="social"/></a>
                             <a href="https://www.instagram.com/jovanna_g24/"><img src={navIcon3} alt="social"/></a>
                         </div> 
-                        <p>CopyRight 2024. All Rights Reserved</p>
+                    </Col>
+                </Row>
+                <Row className='align-item-center'>
+                    <Col sm={12}>
+                    <p>CopyRight 2024. All Rights Reserved</p>
                     </Col>
                 </Row>
             </Container>

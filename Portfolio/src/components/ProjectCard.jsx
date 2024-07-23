@@ -25,15 +25,6 @@ const ProjectCard = ({ project }) => {
     );
   }
 
-  ProjectCard.propTypes = {
-    project: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      imgUrl: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired,
-      gitHubLink: PropTypes.string.isRequired,
-    }).isRequired,
-  };
   
   export default ProjectCard;
   

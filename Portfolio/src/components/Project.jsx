@@ -3,6 +3,9 @@ import projImg1 from '../assets/images/project-img1.png';
 import projImg2 from '../assets/images/project-img2.png';
 import projImg3 from '../assets/images/project-img3.png';
 import projImg4 from '../assets/images/project-img4.png';
+import projImg5 from '../assets/images/project-img5.png';
+import projImg6 from '../assets/images/project-img6.png';
+
 
 const Projects = () => {
 
@@ -35,12 +38,26 @@ const Projects = () => {
       link: 'https://jovanna24.github.io/task-board_3rd_party_APIs/',
       gitHubLink: 'https://github.com/jovanna24/text_editorPWA.git',
     },
+    {
+      title: 'The Tech Blog',
+      description: 'MVC & APIs',
+      imgUrl: projImg5,
+      link: 'https://tech-blog-mvc-4.onrender.com/login ',
+      gitHubLink: 'https://github.com/jovanna24/tech_blog_MVC.git',
+    },
+    {
+      title: 'Reserve a Room',
+      description: 'PostgreSQL & APIs',
+      imgUrl: projImg6,
+      link: 'https://room-reservation-application-jv7w.onrender.com',
+      gitHubLink: 'https://github.com/jovanna24/room_reservation_application.git',
+    },
   ];
 
   return (
     <div>
       {projects.map((project, index) => (
-        <ProjectCard key={index} project={project} />
+        <ProjectCard  project={project} key={index} />
       ))}
     </div>
   );
