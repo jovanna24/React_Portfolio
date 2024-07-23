@@ -242,7 +242,34 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+/* Portfolio */
+.portfolio {
+  margin-top: 20px;
+  padding: 260px 0 260px 0;  
+  background-image: url('./assets/images/color-sharp2.png'); 
+  background-position: top center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: max-content;
+  height: auto;
+  width: 100vw;
+  text-align: center;
+  display: flexbox;
+}
+.project-card {
+  margin: 20px 0 90px 0;
+  height: auto;
+  text-align: center;
+  padding: 50px;
+}
+.project-card img {
+  width: 60%;
+  height: auto;
+  border-radius: 10px;
+  }
+/* Contact */
 /* Footer */ 
+/* Resume */
 .footer {
   background-image: url('./assets/images/footer-bg.png'); 
   background-position: center center;

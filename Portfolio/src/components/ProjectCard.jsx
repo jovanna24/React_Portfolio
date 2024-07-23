@@ -1,11 +1,39 @@
-const ProjectCard = ({ project }) => {
-  return (
-    <div className="project-card">
-      <h2>{project.title}</h2>
-      <p>{project.description}</p>
-      {/* Add more details as needed */}
-    </div>
-  );
-}
+import PropTypes from 'prop-types';
 
-export default ProjectCard;
+const ProjectCard = ({ project }) => {
+        ProjectCard.propTypes = {
+            project: PropTypes.shape({
+            title: PropTypes.string,
+            description: PropTypes.string,
+            imgUrl: PropTypes.string,
+            link: PropTypes.string,
+            gitHubLink: PropTypes.string,
+        }).isRequired,
+        };
+
+    return (
+      <div className="project-card">
+        <h2>{project.title}</h2>
+        <p>{project.description}</p>
+        <img src={project.imgUrl} alt={project.title} />
+        <div>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <br></br>
+          <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </div>
+      </div>
+    );
+  }
+
+  ProjectCard.propTypes = {
+    project: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      imgUrl: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+      gitHubLink: PropTypes.string.isRequired,
+    }).isRequired,
+  };
+  
+  export default ProjectCard;
+  
