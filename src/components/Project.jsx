@@ -5,18 +5,26 @@ import projImg3 from '../assets/images/project-img3.png';
 import projImg4 from '../assets/images/project-img4.png';
 import projImg5 from '../assets/images/project-img5.png';
 import projImg6 from '../assets/images/project-img6.png';
+import projImg7 from '../assets/images/project-img7.png';
 
 
 const Projects = () => {
 
   const projects = [
     {
-      title: 'KanBan Board',
-      description: 'jQuery',
+      title: 'Food Delivery App',
+      description: 'MERN Stack',
       imgUrl: projImg1,
-      link: 'https://jovanna24.github.io/task-board_3rd_party_APIs/',
-      gitHubLink: 'https://github.com/jovanna24/task-board_3rd_party_APIs.git',
+      gitHubLink: 'https://github.com/jovanna24/foodDelMERN.git',
     },
+    {
+      title: 'Google Books Search Engine',
+      description: 'RESTful API to MERN Stack',
+      imgUrl: projImg7,
+      link: 'https://book-searchengine.onrender.com',
+      gitHubLink: 'https://github.com/jovanna24/book_searchEngine.git',
+    },
+
     {
       title: 'Git Brewed!',
       description: '3rd Party API Integration',
