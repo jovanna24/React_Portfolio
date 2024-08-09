@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/images/logo.svg';
-import navIcon1 from '../assets/images/nav-icon1.svg';
-import navIcon2 from '../assets/images/nav-icon2.svg';
-import navIcon3 from '../assets/images/nav-icon3.svg';
+import logo from '../../assets/images/logo.svg';
+import navIcon1 from '../../assets/images/nav-icon1.svg';
+import navIcon2 from '../../assets/images/nav-icon2.svg';
+import navIcon3 from '../../assets/images/nav-icon3.svg';
+import './Navbar.css';
 
 const NavBar = () => {
   // State variable to keep track of whether the user has scrolled past the navbar

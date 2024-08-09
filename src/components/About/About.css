@@ -1,0 +1,71 @@
+.about {
+    margin-top: 0;
+    padding: 200px 0 260px 0;  background-image: url('./assets/images/color-sharp.png'); 
+    background-position: top center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: max-content;
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+.about__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+  }
+  .about img {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+  }
+  #about h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: #d105af 1px 0 10px;
+    color: white;
+  }
+  #about p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #B8B8B8;
+    letter-spacing: 0.8px;
+    margin: 30px 50px 30px 50px;
+    text-align: center;
+    width: 500px;
+  }
+  #about button {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 28px;
+    font-size: 18px;
+    margin: 30px 50px 30px 90px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  #about button span {
+    z-index: 1;
+  }
+  #about button::before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
