@@ -1,6 +1,7 @@
 .about {
     margin-top: 0;
-    padding: 200px 0 260px 0;  background-image: url('./assets/images/color-sharp.png'); 
+    padding: 200px 0 20px 0;  
+    background-image: url('../../assets/images/color-sharp.png'); 
     background-position: top center;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -10,6 +11,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: rgba(45, 9, 62, 0.317);
+
+}
 
 .about__container{
   display: flex;
@@ -19,7 +23,6 @@
   text-align: center;
   margin-top: 50px;
 }
-  }
   .about img {
     width: 500px;
     height: auto;
@@ -32,13 +35,13 @@
     letter-spacing: 0.8px;
     margin-bottom: 20px;
     text-align: center;
-    text-shadow: #d105af 1px 0 10px;
     color: white;
+    text-decoration: solid underline 5px;
   }
   #about p {
     font-weight: 400;
     font-size: 18px;
-    color: #B8B8B8;
+    color: white;
     letter-spacing: 0.8px;
     margin: 30px 50px 30px 50px;
     text-align: center;
@@ -68,4 +71,26 @@
     top: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
+  }
+
+  @media screen and (max-width: 768px) {
+    .about{
+      padding: 60px 0 20px 0;
+    }
+    .about img {
+      width: 200px;
+    }
+
+    #about p {
+      width: 200px;
+    }
+    
+    #about h2{
+      font-size: 30px;
+    } 
+
+    #about button{
+      margin: 30px 50px 30px 50px;
+    }
+
   }

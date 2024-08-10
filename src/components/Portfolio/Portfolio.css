@@ -1,0 +1,14 @@
+/* Portfolio */
+.portfolio-container {
+    background-color: rgb(37, 9, 37);
+    background-position: top center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: max-content;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    padding-top: 30px;
+    color: white
+  }  

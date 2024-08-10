@@ -1,4 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
+import './Resume.css';
 
 const Resume = () => {
 

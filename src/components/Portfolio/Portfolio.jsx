@@ -1,4 +1,5 @@
-import Projects from './Project';
+import Projects from '../Project/Project.jsx';
+import './Portfolio.css';
 
 const Portfolio = () => {
   return (

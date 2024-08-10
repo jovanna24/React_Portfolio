@@ -1,0 +1,93 @@
+/* Resume */
+.resume {
+    margin-top: 0;
+    padding: 200px 0 300px 0;  
+    background-image: url('../../assets/images/color-sharp.png'); 
+    background-color: #08104d;
+    background-position: top center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: max-content;
+    height: auto;
+    width: 100vw;
+    text-align: center;
+    color: white;
+  }
+  .resume h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  
+  .resume a {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 12px 28px;
+    font-size: 18px;
+    margin: 30px 50px 30px 50px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+   
+  }
+  .resume p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #d2cfcf;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .resume .proficiencies {
+    margin: 50px;
+    text-align: center;
+  } 
+  
+  .resume accordion{
+    margin: 20px 10px;
+  }
+  
+  .resume .proficiencies .accordion-item {
+    margin: 50px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background: transparent; 
+    color: white;
+    border-color: transparent;
+    border-radius: 10px;
+    width: auto;
+  }
+  .resume .proficiencies .accordion-button {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    font-size: large; 
+    font-weight: 600;
+    color: white;
+    border-radius: 7px;
+    position: relative;
+  }
+  
+  .resume .proficiencies .accordion-body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resume .proficiencies .accordion-body li {
+    font-weight: 400;
+    font-size: 20px;
+    color: #d2cfcf;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .resume {
+      padding: 50px 0 20px 0;
+    }
+    
+  }
+  

@@ -1,10 +1,8 @@
 /* Navbar */
 .navbar {
     padding: 18px 0;
-    position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
-    z-index: 9999;
     transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out;  
     display: flex;
     justify-content: space-between;
@@ -12,6 +10,15 @@
     background-image: url(../../assets/images/footer-bg.png);
     color: #fff; 
   }
+
+  .navbar a {
+    color: whitesmoke;
+  }
+
+  .navbar a:hover {
+    color: rgb(206, 60, 206);
+  }
+
   .navbar.scrolled {
     padding: 10px 0;
     background-color: black;
@@ -120,3 +127,19 @@
       position: absolute;
   }
   
+
+.navbar-toggler.collapsed {
+  background-color: rgba(184, 59, 184, 0.82);
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+}
+
+

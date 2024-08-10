@@ -52,11 +52,11 @@ const Header = () => {
   });
 
   return (
-    <section className="header" id="header">
-        <div className="welcome-banner">
+    <div className="header" id="header">
+      <div className="welcome-banner">
         <span className="tagline">Welcome to my Portfolio</span>
-        </div>
-      <div>
+
+      <div className="header-content" >
         <TrackVisibility once>
           {({ isVisible }) => (
             <div
@@ -69,11 +69,12 @@ const Header = () => {
             </div>
           )}
         </TrackVisibility>
+        </div>
       </div>
       <div className="header-img">
         <img src={headerImg} alt="Header Img" />
       </div>
-    </section>
+    </div>
   );
 };
 

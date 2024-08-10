@@ -1,16 +1,25 @@
-import ProjectCard from './ProjectCard';
-import projImg1 from '../assets/images/project-img1.png';
-import projImg2 from '../assets/images/project-img2.png';
-import projImg3 from '../assets/images/project-img3.png';
-import projImg4 from '../assets/images/project-img4.png';
-import projImg5 from '../assets/images/project-img5.png';
-import projImg6 from '../assets/images/project-img6.png';
-import projImg7 from '../assets/images/project-img7.png';
+import ProjectCard from '../ProjectCard/ProjectCard';
+import projImg1 from '../../assets/images/project-img1.png';
+import projImg2 from '../../assets/images/project-img2.png';
+import projImg3 from '../../assets/images/project-img3.png';
+import projImg4 from '../../assets/images/project-img4.png';
+import projImg5 from '../../assets/images/project-img5.png';
+import projImg6 from '../../assets/images/project-img6.png';
+import projImg7 from '../../assets/images/project-img7.png';
+import projImg8 from '../../assets/images/project-img8.png';
+import './Project.css';
 
 
 const Projects = () => {
 
   const projects = [
+    {
+      title: 'Interactive RPG',
+      description: 'MERN Stack & GraphQL',
+      imgUrl: projImg8,
+      link: 'https://project3-rpg-3t2r.onrender.com',
+      gitHubLink: 'https://github.com/jovanna24/Project3-RPG.git',
+    },
     {
       title: 'Food Delivery App',
       description: 'MERN Stack',
@@ -63,7 +72,7 @@ const Projects = () => {
   ];
 
   return (
-    <div>
+    <div className="project-info">
       {projects.map((project, index) => (
         <ProjectCard  project={project} key={index} />
       ))}

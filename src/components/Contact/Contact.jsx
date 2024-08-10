@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import contactImg from "../assets/images/contact-img.svg";
+import contactImg from "../../assets/images/contact-img.svg";
 import 'animate.css';
+import './Contact.css';
 
 const Contact = () => {
   const [formDetails, setFormData] = useState({

@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '../src/components/NavBar/NavBar.jsx';
-import Footer from './components/Footer';
+import Footer from '../src/components/Footer/Footer.jsx';
 import Header from '../src/components/Header/Header.jsx';
-import Project from './components/Project';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
+import Project from '../src/components/Project/Project.jsx';
+import Portfolio from '../src/components/Portfolio/Portfolio.jsx';
+import Contact from '../src/components/Contact/Contact.jsx';
+import Resume from '../src/components/Resume/Resume.jsx';
 import About from '../src/components/About/About.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 
