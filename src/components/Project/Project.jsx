@@ -24,7 +24,6 @@ const Projects = () => {
       title: 'Food Delivery App',
       description: 'MERN Stack',
       imgUrl: projImg1,
-      link: 'https://fooddelmern.onrender.com',
       gitHubLink: 'https://github.com/jovanna24/foodDelMERN.git',
     },
     {
