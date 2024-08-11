@@ -5,7 +5,7 @@
     background-position: center center;
     background-size: cover; 
     background-repeat: no-repeat;
-    height: max-content;
+    /* height: max-content; */
     width: 100vw;
     text-align: center;
     color: white;

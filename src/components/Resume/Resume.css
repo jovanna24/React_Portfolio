@@ -7,8 +7,8 @@
     background-position: top center;
     background-size: cover; 
     background-repeat: no-repeat;
-    height: max-content;
-    height: auto;
+    /* height: max-content; */
+    /* height: auto; */
     width: 100vw;
     text-align: center;
     color: white;
