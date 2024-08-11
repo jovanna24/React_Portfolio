@@ -69,7 +69,6 @@
     transition: 0.3s ease-in-out;
   }
 
- */
   
   @media screen and (max-width: 500px) {
     .footer {
@@ -81,7 +80,6 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      width: 100vw;
       justify-content: space-between;
     }
     .footer img{
