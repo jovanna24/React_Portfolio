@@ -45,7 +45,7 @@
     text-align: center;
   } 
   
-  .resume accordion{
+  .resume .accordion{
     margin: 20px 10px;
   }
   
@@ -68,6 +68,7 @@
     border-radius: 7px;
     position: relative;
   }
+
   
   .resume .proficiencies .accordion-body ul {
     list-style-type: none;
@@ -88,6 +89,9 @@
     .resume {
       padding: 50px 0 20px 0;
     }
-    
+    .proficiencies .accordion .accordion-item{
+      margin: 10px;
+    }
+
   }
   

@@ -1,5 +1,5 @@
 .header {
-    padding: 200px 0 20px 0;  
+    padding: 20px 0 20px 0;  
     background-image: url('../../assets/images/banner-bg.png'); 
     background-position: top center;
     background-size: cover; 
@@ -12,9 +12,10 @@
   }
 .welcome-banner{
   width: 50vw;
+  padding: 50px;
 }
 .header-img{
-  width: 100vw;
+  /* width: 100vw; */
 }
   .header-content{
     display: flex;
@@ -40,7 +41,6 @@
   
 @media screen and (max-width: 768px) {
   .header{
-    padding: 200px 5px 50px 0;
     display: flex;
     flex-direction: column;
   }

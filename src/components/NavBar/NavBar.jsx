@@ -36,7 +36,7 @@ const NavBar = () => {
 
 
   return (
-    <Navbar expand="lg" className={ scrolled ? 'scrolled' : ''} fixed="top">
+    <Navbar expand="lg" className={ scrolled ? 'scrolled' : ''} >
       <Container>
       <Navbar.Brand>
           <NavLink to="/" activeclassname="active-link">

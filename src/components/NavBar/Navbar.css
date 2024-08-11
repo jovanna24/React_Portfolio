@@ -13,6 +13,7 @@
 
   .navbar a {
     color: whitesmoke;
+    text-decoration: none;
   }
 
   .navbar a:hover {
