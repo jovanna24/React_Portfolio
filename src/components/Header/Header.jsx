@@ -9,7 +9,6 @@ const Header = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
     "Fullstack Developer",
-    "UI/UX Designer",
     "Problem Solver",
     "Team Player",
   ];
@@ -49,7 +48,7 @@ const Header = () => {
     return () => {
       clearInterval(ticker);
     };
-  });
+  }, [text, delta, isDeleting, loopNum]);
 
   return (
     <div className="header" id="header">
@@ -63,7 +62,7 @@ const Header = () => {
               className={isVisible ? "animate__animated animate__fadeIn" : ""}
             >
               <h1>
-                {`Hi I'm Jovanna, `}
+                {`Hi I'm Jovanna, `} <br></br>
                 <span className="wrap">{text}</span>
               </h1>
             </div>
